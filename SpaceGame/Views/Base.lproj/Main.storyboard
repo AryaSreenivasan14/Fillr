@@ -27,6 +27,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHc-UR-sB9">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                        <connections>
+                                            <action selector="startGameButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XxZ-HR-AgY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

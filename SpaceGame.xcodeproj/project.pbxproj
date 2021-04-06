@@ -78,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42E54D4C261BF4F600AF19D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42FACD04261BD9E4001409A0 /* Main.storyboard */,
+				42E54D44261BDFCF00AF19D2 /* UtilitiesManager.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42E54D4D261BF50F00AF19D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42FACD02261BD9E4001409A0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		42FACCF2261BD9E4001409A0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +118,10 @@
 		42FACCFD261BD9E4001409A0 /* SpaceGame */ = {
 			isa = PBXGroup;
 			children = (
+				42E54D4C261BF4F600AF19D2 /* Views */,
 				42FACCFE261BD9E4001409A0 /* AppDelegate.swift */,
 				42FACD00261BD9E4001409A0 /* SceneDelegate.swift */,
-				42FACD02261BD9E4001409A0 /* ViewController.swift */,
-				42E54D44261BDFCF00AF19D2 /* UtilitiesManager.swift */,
-				42FACD04261BD9E4001409A0 /* Main.storyboard */,
+				42E54D4D261BF50F00AF19D2 /* Controller */,
 				42FACD07261BD9E8001409A0 /* Assets.xcassets */,
 				42FACD09261BD9E8001409A0 /* LaunchScreen.storyboard */,
 				42FACD0C261BD9E8001409A0 /* Info.plist */,
