@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42E54D45261BDFCF00AF19D2 /* UtilitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E54D44261BDFCF00AF19D2 /* UtilitiesManager.swift */; };
 		42FACCFF261BD9E4001409A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FACCFE261BD9E4001409A0 /* AppDelegate.swift */; };
 		42FACD01261BD9E4001409A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FACD00261BD9E4001409A0 /* SceneDelegate.swift */; };
 		42FACD03261BD9E4001409A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FACD02261BD9E4001409A0 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42E54D44261BDFCF00AF19D2 /* UtilitiesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesManager.swift; sourceTree = "<group>"; };
 		42FACCFB261BD9E4001409A0 /* SpaceGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FACCFE261BD9E4001409A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42FACD00261BD9E4001409A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				42FACCFE261BD9E4001409A0 /* AppDelegate.swift */,
 				42FACD00261BD9E4001409A0 /* SceneDelegate.swift */,
 				42FACD02261BD9E4001409A0 /* ViewController.swift */,
+				42E54D44261BDFCF00AF19D2 /* UtilitiesManager.swift */,
 				42FACD04261BD9E4001409A0 /* Main.storyboard */,
 				42FACD07261BD9E8001409A0 /* Assets.xcassets */,
 				42FACD09261BD9E8001409A0 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E54D45261BDFCF00AF19D2 /* UtilitiesManager.swift in Sources */,
 				42FACD03261BD9E4001409A0 /* ViewController.swift in Sources */,
 				42FACCFF261BD9E4001409A0 /* AppDelegate.swift in Sources */,
 				42FACD01261BD9E4001409A0 /* SceneDelegate.swift in Sources */,

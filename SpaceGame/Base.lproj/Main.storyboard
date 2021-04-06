@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhj-TQ-cpV" customClass="ASView" customModule="SpaceGame" customModuleProvider="target">
+                                <rect key="frame" x="40" y="423" width="334" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeh-6W-r6i">
+                                        <rect key="frame" x="20" y="14.5" width="294" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHc-UR-sB9">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="XHc-UR-sB9" firstAttribute="leading" secondItem="lhj-TQ-cpV" secondAttribute="leading" id="BAu-Ir-tH9"/>
+                                    <constraint firstItem="jeh-6W-r6i" firstAttribute="centerX" secondItem="lhj-TQ-cpV" secondAttribute="centerX" id="BXT-G2-2B8"/>
+                                    <constraint firstAttribute="bottom" secondItem="XHc-UR-sB9" secondAttribute="bottom" id="DnP-BB-kXL"/>
+                                    <constraint firstAttribute="height" constant="50" id="H58-xD-TUM"/>
+                                    <constraint firstItem="XHc-UR-sB9" firstAttribute="top" secondItem="lhj-TQ-cpV" secondAttribute="top" id="KSz-nB-CB9"/>
+                                    <constraint firstAttribute="trailing" secondItem="XHc-UR-sB9" secondAttribute="trailing" id="V9V-rU-2f5"/>
+                                    <constraint firstItem="jeh-6W-r6i" firstAttribute="leading" secondItem="lhj-TQ-cpV" secondAttribute="leading" constant="20" id="dMg-Oa-a9i"/>
+                                    <constraint firstAttribute="trailing" secondItem="jeh-6W-r6i" secondAttribute="trailing" constant="20" id="sh1-Xp-Oe1"/>
+                                    <constraint firstItem="jeh-6W-r6i" firstAttribute="centerY" secondItem="lhj-TQ-cpV" secondAttribute="centerY" id="woq-cY-wbc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life 5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-eq-7DA">
+                                <rect key="frame" x="351.5" y="64" width="42.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-uh-Zi7">
+                                <rect key="frame" x="335" y="85" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lhj-TQ-cpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1af-FA-GIg"/>
+                            <constraint firstItem="7EL-eq-7DA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7fy-7x-JN8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BGm-uh-Zi7" secondAttribute="trailing" constant="20" id="Oka-GP-Uy7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7EL-eq-7DA" secondAttribute="trailing" constant="20" id="T73-45-IiI"/>
+                            <constraint firstItem="lhj-TQ-cpV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cET-Bd-G58"/>
+                            <constraint firstItem="BGm-uh-Zi7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fze-eX-WW9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lhj-TQ-cpV" secondAttribute="trailing" constant="40" id="jZL-T0-4JI"/>
+                            <constraint firstItem="7EL-eq-7DA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="rba-mk-vGI"/>
+                            <constraint firstItem="lhj-TQ-cpV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="u0l-xo-hVy"/>
+                            <constraint firstItem="BGm-uh-Zi7" firstAttribute="top" secondItem="7EL-eq-7DA" secondAttribute="bottom" id="wh6-aB-fbN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="71.651785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
