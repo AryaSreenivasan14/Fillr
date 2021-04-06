@@ -78,6 +78,12 @@
                             <constraint firstItem="BGm-uh-Zi7" firstAttribute="top" secondItem="7EL-eq-7DA" secondAttribute="bottom" id="wh6-aB-fbN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="jeh-6W-r6i" id="Zup-XB-ej3"/>
+                        <outlet property="lifeLabel" destination="7EL-eq-7DA" id="dZV-X2-ptW"/>
+                        <outlet property="scoreLabel" destination="BGm-uh-Zi7" id="t7Y-ap-ifu"/>
+                        <outlet property="startUI" destination="lhj-TQ-cpV" id="ajI-oe-K4k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
